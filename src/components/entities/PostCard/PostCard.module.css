@@ -1,0 +1,58 @@
+/* Стили для компонента PostCard */
+.postCard {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.postCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardActions {
+  padding: 8px 16px 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.postTitle {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.postContent {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.dateIcon {
+  font-size: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .cardContent {
+    padding: 12px;
+  }
+
+  .cardActions {
+    padding: 8px 12px 12px;
+  }
+
+  .postTitle {
+    font-size: 1.1rem;
+  }
+}

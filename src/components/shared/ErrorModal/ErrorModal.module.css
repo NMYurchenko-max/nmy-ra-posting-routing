@@ -1,0 +1,85 @@
+/* Стили для компонента ErrorModal */
+
+.dialog {
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.dialogContent {
+  padding-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.errorIcon {
+  font-size: 28px;
+  color: #f44336;
+}
+
+.title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.closeButton {
+  margin-left: auto;
+  color: #666;
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.message {
+  line-height: 1.6;
+  white-space: pre-wrap;
+  color: #666;
+}
+
+.actions {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+}
+
+.closeButtonAction {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: none;
+  border-radius: 4px;
+}
+
+.closeButtonAction:hover {
+  background-color: #1976d2;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .dialog {
+    margin: 16px;
+    max-width: calc(100% - 32px);
+  }
+
+  .header {
+    gap: 12px;
+  }
+
+  .errorIcon {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+}

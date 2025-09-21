@@ -1,0 +1,87 @@
+/* Стили для компонента PostForm */
+.formContainer {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.formHeader {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.formTitle {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.formSubtitle {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.formContent {
+  padding: 24px;
+}
+
+.textField {
+  margin-bottom: 16px;
+}
+
+.textField:last-of-type {
+  margin-bottom: 24px;
+}
+
+.formActions {
+  padding: 16px 24px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.submitButton {
+  min-width: 120px;
+}
+
+.cancelButton {
+  min-width: 100px;
+}
+
+/* Состояние загрузки */
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .formHeader {
+    padding: 16px 20px 12px;
+  }
+
+  .formContent {
+    padding: 20px;
+  }
+
+  .formActions {
+    padding: 12px 20px;
+    flex-direction: column-reverse;
+  }
+
+  .submitButton,
+  .cancelButton {
+    width: 100%;
+  }
+}

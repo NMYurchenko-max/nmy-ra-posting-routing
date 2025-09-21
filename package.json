@@ -1,0 +1,69 @@
+{
+  "name": "nmy-ra-posting-routing",
+  "private": false,
+  "version": "0.0.1",
+  "description": "React Router Posts Application",
+  "main": "src/main.tsx",
+  "author": "N.Yurchenko <NMYurchenko@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NMYurchenko-max/nmy-ra-posting-routing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NMYurchenko-max/nmy-ra-posting-routing.git"
+  },
+  "homepage": "https://github.com/NMYurchenko-max/nmy-ra-posting-routing#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint \"src/**/*.ts?(x|js)\" --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint \"src/**/*.ts?(x|js)\" --ext .ts,.tsx,.js,.jsx --fix",
+    "format": "prettier \"src/**/*.ts?(x|js)\" --write",
+    "preview": "vite preview",
+    "deploy": "yarn build && gh-pages -d dist",
+    "typecheck": "tsc --noEmit",
+    "cypress": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "classnames": "2.5.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router": "^7.9.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/classnames": "^2.3.4",
+    "@types/cypress": "^1.1.6",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/uuid": "^11.0.0",
+    "@vitejs/plugin-react": "^5.0.3",
+    "cypress": "^15.2.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "react-router-dom": "^7.9.1",
+    "typescript": "5.9.2",
+    "typescript-eslint": "^8.44.0",
+    "uuid": "^13.0.0",
+    "vite": "^7.1.6"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

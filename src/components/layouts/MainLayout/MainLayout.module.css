@@ -1,0 +1,132 @@
+/* Стили для компонента MainLayout */
+.layoutContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.appBar {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.navButton {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+}
+
+.navButton:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pageTitle {
+  margin: 0 0 24px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  padding: 24px;
+}
+
+.errorText {
+  color: #d32f2f;
+  margin-bottom: 16px;
+}
+
+.retryButton {
+  margin-top: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 16px;
+  }
+
+  .toolbar {
+    padding: 0 16px;
+    min-height: 56px;
+  }
+
+  .logoText {
+    font-size: 1.25rem;
+  }
+
+  .navButtons {
+    gap: 4px;
+  }
+
+  .pageTitle {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContent {
+    padding: 12px;
+  }
+
+  .toolbar {
+    padding: 0 12px;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .pageTitle {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+}
